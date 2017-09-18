@@ -2,13 +2,43 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="com.wind.simonview1.MainActivity">
-    <com.wind.simonview1.DrawColorView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
-    <com.wind.simonview1.DrawCircleView
-        android:layout_width="match_parent"
-        android:layout_height="400dp" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.wind.simonview1.DrawColorView
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <com.wind.simonview1.DrawCircleView
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+            <com.wind.simonview1.DrawRectView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+            <com.wind.simonview1.DrawPointView
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+            <com.wind.simonview1.DrawOvalView
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
