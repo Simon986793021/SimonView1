@@ -39,6 +39,24 @@
             <com.wind.simonview1.DrawOvalView
                 android:layout_width="match_parent"
                 android:layout_height="200dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+            <com.wind.simonview1.DrawLineView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ccc"/>
+            <com.wind.simonview1.DrawArcView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+            <include layout="@layout/view_line"/>
+            <com.wind.simonview1.DrawPathView
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
